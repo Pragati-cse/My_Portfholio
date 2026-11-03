@@ -28,6 +28,5 @@ Portfolio/
 ```
 
 ## Deployment
-Hosted using GitHub Pages.
-
+Deployed using Vercel
 
