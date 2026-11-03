@@ -1,0 +1,491 @@
+/* ---------------------- RESET ---------------------- */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior:smooth;
+}
+
+/* ---------------------- THEME BACKGROUND ---------------------- */
+body{
+    background:linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);
+    color:#fff;
+}
+
+/* ---------------------- NAVBAR ---------------------- */
+.navbar{
+    width:100%;
+    padding:18px 70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    top:0;
+    background:rgba(0,0,0,0.3);
+    backdrop-filter:blur(12px);
+    z-index:10;
+}
+
+
+.logo{
+    font-size:25px;
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.navbar ul{
+    display:flex;
+    gap:25px;
+    list-style:none;
+}
+
+.navbar ul li a{
+    text-decoration:none;
+    font-size:17px;
+    color:#fff;
+    transition:.3s;
+    font-weight:500;
+}
+
+.navbar ul li a:hover{
+    color:#7dd3fc;
+    border-bottom:2px solid #38bdf8;
+    padding-bottom:3px;
+}
+.navbar ul li a.active{
+    color: #38bdf8; /* your highlight color */
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* ---------------------- HERO ---------------------- */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-top:60px;
+    text-align:center;
+}
+
+.hero-content h1{
+    font-size:42px;
+    font-weight:800;
+}
+
+.hero-content span{
+    background:linear-gradient(135deg,#38bdf8,#9333ea);
+   
+    color:transparent;
+}
+
+.hero-content p{
+    margin-top:10px;
+    font-size:18px;
+    opacity:.9;
+}
+
+/* Buttons */
+.btn-box{
+    margin-top:18px;
+    display:flex;
+    gap:15px;
+    justify-content:center;
+}
+
+.btn{
+   padding:10px 30px;
+    border-radius:30px;
+    font-size:17px;
+    font-weight:600;
+    background:linear-gradient(135deg,#38bdf8,#9333ea);
+    color:#fff;
+    text-decoration:none;
+    transition:.4s ease;
+}
+
+.btn:hover{
+    transform:scale(1.06);
+    box-shadow:0px 0px 15px rgba(147,51,234,.8);
+
+}
+
+.btn2{
+    background:transparent;
+    border:2px solid #9333ea;
+}
+
+.btn2:hover{
+   background:#9333ea;
+
+}
+
+/* ---------------------- ABOUT ---------------------- */
+.about{
+    padding:90px 0;
+    text-align:center;
+}
+
+.about-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+    padding:30px;
+    flex-wrap:wrap;
+}
+
+.profile-pic img{
+    width:200px;
+    height:200px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #38bdf8;
+    box-shadow:0 0 20px rgba(56,189,248,.6);
+    transition:.5s;
+}
+
+.profile-pic img:hover{
+    transform:scale(1.06);
+}
+
+.about-text{
+    max-width:550px;
+    text-align:left;
+}
+
+.about-text h3{
+    font-size:26px;
+    margin-bottom:10px;
+    color:#7dd3fc;
+}
+
+/* ---------------------- SKILLS ---------------------- */
+.skills{
+    padding:80px 0;
+    text-align:center;
+}
+
+.skill-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.skill-card{
+    padding:14px 28px;
+    font-size:18px;
+    background:rgba(255,255,255,.15);
+    border-radius:25px;
+    transition:.3s;
+}
+
+.skill-card:hover{
+    transform:translateY(-8px);
+    background:#38bdf8;
+}
+
+/* ---------------------- ACHIEVEMENTS ---------------------- */
+.achievements{
+    padding:80px 0;
+    text-align:center;
+}
+
+.achieve-box{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    padding:20px;
+}
+
+.achieve-card{
+    padding:15px 25px;
+    background:rgba(255,255,255,.12);
+    backdrop-filter:blur(10px);
+    border-radius:20px;
+    font-size:17px;
+    transition:.3s;
+}
+
+.achieve-card:hover{
+    transform:translateY(-8px);
+    background:#9333ea;
+}
+
+.sub-heading{
+    font-size: 22px;
+    margin-top: 25px;
+    text-align: center;
+    color:white;
+}
+
+.certificate-section{
+    margin-top: 20px;
+}
+
+.certificate-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.certificate-card{
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(6px);
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+    border: 1px solid #6a11cb41;
+}
+
+.certificate-card:hover{
+    background: #6A11CB;
+    color:#fff;
+    transform: translateY(-4px);
+}
+
+.certificate-card a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* ---------------------- PROJECTS ---------------------- */
+.projects{
+    padding:80px 0;
+    text-align:center;
+}
+
+.project-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    width:260px;
+    background:rgba(255,255,255,.12);
+    border-radius:18px;
+    padding:22px;
+    transition:.4s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,255,255,.4);
+}
+
+/* small button */
+.small{
+    padding:8px 20px;
+    font-size:14px;
+}
+
+/* ---------------------- CONTACT ---------------------- */
+.contact{
+    padding:80px 0;
+    text-align:center;
+}
+
+/* ---------------------- FOOTER ---------------------- */
+footer{
+    text-align:center;
+    padding:20px;
+    background:rgba(0,0,0,.3);
+}
+
+.navbar ul li a.active{
+    color: #38bdf8; /* your highlight color */
+    border-bottom: 2px solid #38bdf8;
+}
+
+/* ---------------------- RESPONSIVE ---------------------- */
+@media (max-width:900px){
+    .navbar{
+        padding:15px 30px;
+    }
+    .logo{font-size:20px;}
+}
+
+@media (max-width:700px){
+    .navbar ul{
+        display:none;
+    }
+}
+
+
+
+/* ===== THEME VARIABLES ===== */
+:root{
+    --bg-gradient: linear-gradient(135deg,#0d1b2a,#1b263b,#415a77);
+    --text-color: #ffffff;
+    --card-bg: rgba(255,255,255,.12);
+}
+
+body.light-theme{
+    --bg-gradient: linear-gradient(135deg,#f8fafc,#e2e8f0,#cbd5e1);
+    --text-color: #0f172a;
+    --card-bg: rgba(0,0,0,.08);
+}
+
+body{
+    background: var(--bg-gradient);
+    color: var(--text-color);
+}
+
+/* cards use variable bg */
+.skill-card,
+.project-card,
+.achieve-card,
+.certificate-card{
+    background: var(--card-bg);
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle{
+    background:none;
+    border:2px solid #38bdf8;
+    color:#38bdf8;
+    padding:6px 14px;
+    border-radius:20px;
+    cursor:pointer;
+    font-size:16px;
+    transition:.3s;
+}
+
+.theme-toggle:hover{
+    background:#38bdf8;
+    color:#000;
+}
+
+/* ===== FADE-IN EFFECT ===== */
+.fade-in{
+    animation: fadeInUp .8s ease forwards;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* ===== SMALL RESPONSIVE EFFECT ===== */
+@media (max-width:600px){
+    .btn-box{
+        flex-direction:column;
+    }
+}
+
+
+.skills-category h3{
+    margin: 30px 0 15px;
+    color: #7dd3fc;
+    font-size: 22px;
+}
+
+
+.education{
+    padding:80px 20px;
+    text-align:center;
+}
+
+.education-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:30px;
+}
+
+.education-card{
+    width:300px;
+    padding:25px;
+    background:var(--card-bg);
+    border-radius:18px;
+    transition:.3s;
+}
+
+.education-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 15px rgba(56,189,248,.4);
+}
+
+.education-card h3{
+    color:#7dd3fc;
+    margin-bottom:15px;
+}
+
+.education-card p{
+    margin:8px 0;
+}
+
+
+.menu-toggle{
+    display:none;
+    background:none;
+    border:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
+}
+
+@media(max-width:700px){
+
+    .navbar{
+        padding:15px 20px;
+    }
+
+    .logo{
+        font-size:17px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .navbar ul{
+        display:none;
+        position:absolute;
+        top:65px;
+        left:0;
+        width:100%;
+        background:#1b263b;
+        flex-direction:column;
+        align-items:center;
+        padding:20px;
+        gap:20px;
+    }
+
+    .navbar ul.show{
+        display:flex;
+    }
+
+    .theme-toggle{
+        padding:5px 9px;
+        font-size:13px;
+    }
+
+    .hero-content h1{
+        font-size:30px;
+    }
+
+    .about-text{
+        text-align:center;
+    }
+
+    .project-card{
+        width:90%;
+    }
+}
